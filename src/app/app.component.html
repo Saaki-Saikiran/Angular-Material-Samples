@@ -84,7 +84,7 @@
 
 <md-card>
   <md-card-content>
-    <h2 class="example-h2">Result</h2>
+    <h2 class="example-h2">Progress bar result</h2>
 
     <section class="example-section">
       <md-progress-bar
@@ -111,5 +111,55 @@
   </md-card-content>
 </md-card>
 
+<md-card>
+  <md-card-content>
+    <h2 class="example-h2">Radio Button</h2>
 
 <md-radio-button class="example-radio-button"  [value]="season">Test Radio Button</md-radio-button>
+</md-card-content>
+</md-card>
+
+<md-card>
+  <md-card-content>
+    <h2 class="example-h2">Check box</h2>
+
+<md-checkbox
+        class="example-margin"
+        [checked]="checked"
+        [indeterminate]="indeterminate"
+        [align]="align"
+        [disabled]="disabled">
+      I'm a checkbox
+    </md-checkbox>
+  </md-card-content>
+</md-card>
+
+
+    <md-card>
+      <md-card-content>
+        <h2 class="example-h2">Input field</h2>
+
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="Input Field">
+    </md-input-container>
+  </md-card-content>
+</md-card>
+
+
+    <md-card>
+      <md-card-content>
+        <h2 class="example-h2">Select Drop down</h2>
+
+    <md-select id="billing-state"
+                     name="state"
+                     placeholder="select drop down"
+                     required>
+            <md-option [value]="">option-1</md-option>
+            <md-option [value]="tx">option-2</md-option>
+            <md-option [value]="">option-11</md-option>
+            <md-option [value]="tx">option-21</md-option>
+            <md-option [value]="">option-12</md-option>
+            <md-option [value]="tx">option-22</md-option>
+          </md-select>
+        </md-card-content>
+      </md-card>

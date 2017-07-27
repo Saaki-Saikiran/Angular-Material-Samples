@@ -14,4 +14,9 @@ export class AppComponent {
   color1 = 'primary';
   mode1 = 'determinate';
   value = 50;
+
+  checked = false;
+  indeterminate = false;
+  align = 'start';
+  disabled = false;
 }
