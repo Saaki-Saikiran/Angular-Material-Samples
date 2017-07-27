@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  color = 'primary';
+  mode = 'determinate';
+  value1 = 50;
+
+  color1 = 'primary';
+  mode1 = 'determinate';
+  value = 50;
 }
