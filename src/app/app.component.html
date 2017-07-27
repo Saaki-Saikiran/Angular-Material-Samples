@@ -1,3 +1,11 @@
-<h1>
-  {{title}}
-</h1>
+<h1>Date Picker </h1>
+
+<div>
+<form >
+<md-input-container>
+  <input mdInput [mdDatepicker]="picker" placeholder="Choose a date">
+  <button mdSuffix [mdDatepickerToggle]="picker"></button>
+</md-input-container>
+<md-datepicker #picker></md-datepicker>
+</form>
+</div>
