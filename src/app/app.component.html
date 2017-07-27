@@ -1,3 +1,15 @@
+<md-card>
+  <md-card-content>
+    <h2 class="example-h2">Menu</h2>
+    <button md-button [mdMenuTriggerFor]="menu">Menu</button>
+<md-menu #menu="mdMenu">
+  <button md-menu-item>Item 1</button>
+  <button md-menu-item>Item 2</button>
+</md-menu>
+</md-card-content>
+</md-card>
+
+
 <h1>Date Picker </h1>
 
 <div>
@@ -20,6 +32,7 @@
     </section>
   </md-card-content>
 </md-card>
+
 <md-card>
   <md-card-content>
     <h2 class="example-h2">Result</h2>
@@ -163,3 +176,156 @@
           </md-select>
         </md-card-content>
       </md-card>
+
+
+      <md-card class="example-card">
+  <md-card-header>
+    <div md-card-avatar class="example-header-image"></div>
+    <md-card-title>Shiba Inu</md-card-title>
+    <md-card-subtitle>Dog Breed</md-card-subtitle>
+  </md-card-header>
+  <img md-card-image src="assets/image/download.png">
+  <md-card-content>
+    <p>
+      This is about LIFE.
+    </p>
+  </md-card-content>
+  <md-card-actions>
+    <button md-button>LIKE</button>
+    <button md-button>SHARE</button>
+  </md-card-actions>
+</md-card>
+
+
+<md-card>
+  <md-card-content>
+    <h2 class="example-h2">Tabbing Functionality</h2>
+
+<md-tab-group>
+  <md-tab label="Tab 1">Content 1</md-tab>
+  <md-tab label="Tab 2">Content 2</md-tab>
+  <md-tab label="Tab 3">Content 3</md-tab>
+  <md-tab label="Tab 4">Content 4</md-tab>
+</md-tab-group>
+</md-card-content>
+</md-card>
+
+
+<md-card>
+  <md-card-content>
+    <h2 class="example-h2">Toggle Functionality for Buttons</h2>
+
+<md-button-toggle-group #group="mdButtonToggleGroup">
+  <md-button-toggle value="left">
+    <md-icon>format_align_left</md-icon>
+  </md-button-toggle>
+  <md-button-toggle value="center">
+    <md-icon>format_align_center</md-icon>
+  </md-button-toggle>
+  <md-button-toggle value="right">
+    <md-icon>format_align_right</md-icon>
+  </md-button-toggle>
+  <md-button-toggle value="justify" disabled>
+    <md-icon>format_align_justify</md-icon>
+  </md-button-toggle>
+</md-button-toggle-group>
+<div class="example-selected-value">Selected value: {{group.value}}</div>
+</md-card-content>
+</md-card>
+
+<md-card>
+  <md-card-content>
+    <h2 class="example-h2">Grids Functionality </h2>
+
+<md-grid-list cols="2" rowHeight="2:1">
+  <md-grid-tile>Grid-1</md-grid-tile>
+  <md-grid-tile>Grid-2</md-grid-tile>
+  <md-grid-tile>Grid-3</md-grid-tile>
+  <md-grid-tile>Grid-4</md-grid-tile>
+</md-grid-list>
+</md-card-content>
+</md-card>
+
+
+<md-card>
+  <md-card-content>
+    <h2 class="example-h2">Side Navigation </h2>
+
+<md-sidenav-container class="example-container">
+  <md-sidenav #sidenav class="example-sidenav">
+Saikiran we are able navigate to left side.  </md-sidenav>
+
+  <div class="example-sidenav-content">
+    <button type="button" md-button (click)="sidenav.open()">
+      Open sidenav
+    </button>
+  </div>
+
+</md-sidenav-container>
+
+</md-card-content>
+</md-card>
+
+
+<md-card class="result">
+  <md-card-content>
+    <h2 class="example-h2">Toggle</h2>
+
+    <section class="example-section">
+      <md-slide-toggle
+          class="example-margin"
+          [color]="color"
+          [checked]="checked"
+          [disabled]="disabled">
+        Slide me!
+      </md-slide-toggle>
+    </section>
+  </md-card-content>
+</md-card>
+
+
+<md-card class="result">
+  <md-card-content>
+    <h2 class="example-h2">Tool bars</h2>
+
+<md-toolbar>SAIKIRAN-1</md-toolbar>
+</md-card-content>
+</md-card>
+
+<md-card class="result">
+  <md-card-content>
+<md-toolbar>SAIKIRAN-2</md-toolbar>
+</md-card-content>
+</md-card>
+
+<md-card class="result">
+  <md-card-content>
+<md-toolbar>SAIKIRAN-3</md-toolbar>
+</md-card-content>
+</md-card>
+
+<md-card class="result">
+  <md-card-content>
+<md-toolbar>SAIKIRAN-4</md-toolbar>
+</md-card-content>
+</md-card>
+
+<md-card class="result">
+  <md-card-content>
+<md-toolbar>SAIKIRAN-5</md-toolbar>
+
+</md-card-content>
+</md-card>
+
+
+<md-card class="result">
+  <md-card-content>
+    <h2 class="example-h2">Pagination</h2>
+
+<md-paginator [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]">
+</md-paginator>
+
+</md-card-content>
+</md-card>
